@@ -7,17 +7,19 @@
 
 <link name="base_link">
   <inertial>
-    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
-    <mass value="50.0"/> <!-- Base link mass test value-->
-    <inertia ixx="1.5" iyy="2.5" izz="3.5" ixy="0.0" iyz="0.0" ixz="0.0"/> <!-- Base link inertia test values-->
-  </inertial>
-  <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="50.0"/>
+    <inertia ixx="1.5" iyy="2.5" izz="3.5" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/> 
     <geometry>
       <mesh filename="package://urdf_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
+
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
@@ -26,16 +28,6 @@
   </collision>
 </link>
 
-<!-- BASE_FOOTPRINT LINK -->
-
-<joint name="base_footprint_joint" type="fixed">
-    <parent link="base_link"/>
-    <child link="base_footprint"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-</joint>
-
-<link name="base_footprint">
-</link>
 
 <link name="Bogie2_1">
   <inertial>
@@ -100,6 +92,57 @@
   </collision>
 </link>
 
+
+<link name="Bar1_1_sph_x">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="Bar1_1_sph_y">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="Bar1_1_sph_z">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+
+<link name="Bar1_2_sph_x">
+  <inertial>
+  <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="Bar1_2_sph_y">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="Bar1_2_sph_z">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+
 <link name="Bar1_2">
   <inertial>
     <origin xyz="-0.0453511772266767 0.03284580073433602 -0.08401395292890351" rpy="0 0 0"/>
@@ -142,6 +185,32 @@
   </collision>
 </link>
 
+
+<link name="Bar2_1_sph_x">
+  <inertial>
+  <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="Bar2_1_sph_y">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="Bar2_1_sph_z">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+
 <link name="Bar2_2">
   <inertial>
     <origin xyz="-0.07413348749137935 0.0685212357582855 0.0017187497326043855" rpy="0 0 0"/>
@@ -162,6 +231,31 @@
     </geometry>
   </collision>
 </link>
+
+<link name="Bar2_2_sph_x">
+  <inertial>
+  <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="Bar2_2_sph_y">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
+<link name="Bar2_2_sph_z">
+  <inertial>
+    <mass value="0.001"/>
+    <inertia ixx="1e-6" iyy="1e-6" izz="1e-6"
+             ixy="0" iyz="0" ixz="0"/>
+  </inertial>
+</link>
+
 
 <link name="Wheel1_1">
   <inertial>
@@ -352,155 +446,286 @@
   </collision>
 </link>
 
-<joint name="Revolute 4" type="continuous">
+<joint name="Revolute_4" type="continuous">
   <origin xyz="0.103766 -0.219571 -0.0607" rpy="0 0 0"/>
   <parent link="Bogie1_1"/>
   <child link="Bogie2_1"/>
   <axis xyz="-0.708966 -0.677955 0.194277"/>
+
+  <dynamics damping="3.0" friction="0.2"/>
 </joint>
 
-<joint name="Revolute 5" type="continuous">
+<joint name="Revolute_5" type="continuous">
   <origin xyz="0.342141 -0.375854 0.3869" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Diff1_1"/>
   <axis xyz="0.626432 -0.731916 -0.268109"/>
+  <dynamics damping="3.0" friction="0.2"/>
 </joint>
 
-<joint name="Revolute 6" type="continuous">
+
+<joint name="Revolute_6_x" type="continuous">
   <origin xyz="0.186039 -0.110927 0.194654" rpy="0 0 0"/>
   <parent link="Bogie3_1"/>
-  <child link="Bar1_1"/>
-  <axis xyz="0.699606 -0.64133 0.315035"/>
+  <child link="Bar1_1_sph_x"/>
+  <axis xyz="0.699606 0 0"/>
 </joint>
 
-<joint name="Revolute 7" type="continuous">
+<joint name="Revolute_6_y" type="continuous">
+  <origin xyz="0.0 0 0.0" rpy="0 0 0"/>
+  <parent link="Bar1_1_sph_x"/>
+  <child link="Bar1_1_sph_y"/>
+  <axis xyz="0 -0.64133 0"/>
+</joint>
+
+<joint name="Revolute_6_z" type="continuous">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="Bar1_1_sph_y"/>
+  <child link="Bar1_1_sph_z"/>
+  <axis xyz="0 0 0.315035"/>
+</joint>
+
+
+<joint name="Revolute_6" type="fixed">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Bogie3_1"/>
+  <child link="Bar1_1"/>
+</joint>
+
+
+<joint name="Revolute_7_x" type="continuous">
+  <origin xyz="0.236664 0.188148 -0.011824" rpy="0 0 0"/>
+  <parent link="Diff1_1"/>
+  <child link="Bar1_2_sph_x"/>
+  <axis xyz="0.626432 0 0"/>
+</joint>
+
+<joint name="Revolute_7_y" type="continuous">
+  <origin xyz="0.0 0 0.0" rpy="0 0 0"/>
+  <parent link="Bar1_2_sph_x"/>
+  <child link="Bar1_2_sph_y"/>
+  <axis xyz="0 -0.731916 0"/>
+</joint>
+
+<joint name="Revolute_7_z" type="continuous">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="Bar1_2_sph_y"/>
+  <child link="Bar1_2_sph_z"/>
+  <axis xyz="0 0 -0.268109"/>
+</joint>
+
+
+<joint name="Revolute_7" type="fixed">
   <origin xyz="0.236664 0.188148 -0.011824" rpy="0 0 0"/>
   <parent link="Diff1_1"/>
   <child link="Bar1_2"/>
-  <axis xyz="0.626432 -0.731916 -0.268109"/>
 </joint>
 
-<joint name="Revolute 8" type="continuous">
+
+
+
+<joint name="Revolute_8" type="fixed">
   <origin xyz="0.125165 -0.12932 0.102633" rpy="0 0 0"/>
   <parent link="Bogie1_1"/>
   <child link="Bar2_1"/>
-  <axis xyz="0.005692 -0.280968 -0.9597"/>
 </joint>
 
-<joint name="Revolute 9" type="continuous">
+<joint name="Revolute_8_x" type="continuous">
+  <origin xyz="0.0 0 0.0" rpy="0 0 0"/>
+  <parent link="Bar2_1"/>
+  <child link="Bar2_1_sph_x"/>
+  <axis xyz="0.005692 0 0"/>
+</joint>
+
+<joint name="Revolute_8_y" type="continuous">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="Bar2_1_sph_x"/>
+  <child link="Bar2_1_sph_y"/>
+  <axis xyz="0 -0.280968 0"/>
+</joint>
+
+<joint name="Revolute_8_z" type="continuous">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="Bar2_1_sph_y"/>
+    <child link="Bar2_1_sph_z"/>
+    <axis xyz="0 0 -0.9597"/>
+</joint>
+
+
+<joint name="Revolute_9_x" type="continuous">
+  <origin xyz="0.0 0 0.0" rpy="0 0 0"/>
+  <parent link="Bar2_2"/>
+  <child link="Bar2_2_sph_x"/>
+  <axis xyz="0.626432 0 0"/>
+</joint>
+
+<joint name="Revolute_9_y" type="continuous">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="Bar2_2_sph_x"/>
+  <child link="Bar2_2_sph_y"/>
+  <axis xyz="0 -0.731916 0"/>
+</joint>
+
+<joint name="Revolute_9_z" type="continuous">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="Bar2_2_sph_y"/>
+    <child link="Bar2_2_sph_z"/>
+    <axis xyz="0 0 -0.268109"/>
+</joint>
+
+
+<joint name="Revolute_9" type="fixed">
   <origin xyz="-0.21948 -0.208225 0.00447" rpy="0 0 0"/>
   <parent link="Diff1_1"/>
   <child link="Bar2_2"/>
-  <axis xyz="0.626432 -0.731916 -0.268109"/>
 </joint>
 
-<joint name="Revolute 10" type="continuous">
+<joint name="Revolute_10" type="continuous">
   <origin xyz="-0.323557 0.444523 0.206988" rpy="0 0 0"/>
   <parent link="Bogie3_1"/>
   <child link="Wheel1_1"/>
   <axis xyz="-0.708966 -0.677955 0.194277"/>
 </joint>
 
-<joint name="Revolute 11" type="continuous">
+<joint name="Revolute_11" type="continuous">
   <origin xyz="-0.141623 0.254762 0.208719" rpy="0 0 0"/>
   <parent link="Bogie4_1"/>
   <child link="Wheel2_1"/>
   <axis xyz="0.708966 0.677955 -0.194277"/>
 </joint>
 
-<joint name="Revolute 12" type="continuous">
+<joint name="Revolute_12" type="continuous">
   <origin xyz="-0.228777 0.257791 -0.098632" rpy="0 0 0"/>
   <parent link="Bogie4_1"/>
   <child link="Wheel3_1"/>
   <axis xyz="0.708966 0.677955 -0.194277"/>
 </joint>
 
-<joint name="Revolute 13" type="continuous">
+<joint name="Revolute_13" type="continuous">
   <origin xyz="-0.288513 0.111749 -0.499405" rpy="0 0 0"/>
   <parent link="Bogie1_1"/>
   <child link="Wheel4_1"/>
   <axis xyz="-0.708966 -0.677955 0.194277"/>
 </joint>
 
-<joint name="Revolute 14" type="continuous">
+<joint name="Revolute_14" type="continuous">
   <origin xyz="0.174314 -0.273113 -0.153456" rpy="0 0 0"/>
   <parent link="Bogie2_1"/>
   <child link="Wheel5_1"/>
   <axis xyz="0.708966 0.677955 -0.194277"/>
 </joint>
 
-<joint name="Revolute 15" type="continuous">
+<joint name="Revolute_15" type="continuous">
   <origin xyz="0.221257 -0.232364 0.159922" rpy="0 0 0"/>
   <parent link="Bogie2_1"/>
   <child link="Wheel6_1"/>
   <axis xyz="0.708966 0.677955 -0.194277"/>
 </joint>
 
-<joint name="Revolute 1" type="continuous">
+<joint name="Revolute_1" type="continuous">
   <origin xyz="-0.020622 0.044907 -0.245401" rpy="0 0 0"/>
   <parent link="Bogie3_1"/>
   <child link="Bogie4_1"/>
   <axis xyz="0.708966 0.677955 -0.194277"/>
+
+  <dynamics damping="3.0" friction="0.2"/>
 </joint>
 
-<joint name="Revolute 17" type="continuous">
+<joint name="Revolute_17" type="continuous">
   <origin xyz="0.392766 -0.076779 0.180422" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Bogie3_1"/>
   <axis xyz="0.708966 0.677955 -0.194277"/>
+
+  <dynamics damping="3.0" friction="0.2"/>
 </joint>
 
-<joint name="Revolute 18" type="continuous">
+<joint name="Revolute_18" type="continuous">
   <origin xyz="-0.002504 -0.454759 0.288737" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Bogie1_1"/>
   <axis xyz="0.708966 0.677955 -0.194277"/>
+
+  <dynamics damping="3.0" friction="0.2"/>
 </joint>
 
 
 
 
 <ros2_control name="IgnitionSystem" type="system">
-  
   <hardware>
     <plugin>ign_ros2_control/IgnitionSystem</plugin>
   </hardware>
 
-  <joint name="Revolute 10">
+  <joint name="Revolute_10">
     <command_interface name="velocity">
-      <param name="min">-10</param>
-      <param name="max">10</param>
+      <param name="min">-10.0</param>
+      <param name="max">10.0</param>
     </command_interface>
     <state_interface name="position"/>
     <state_interface name="velocity"/>
   </joint>
 
-  <joint name="Revolute 11">
-    <command_interface name="velocity"><param name="min">-10</param><param name="max">10</param></command_interface>
-    <state_interface name="position"/><state_interface name="velocity"/>
+  <joint name="Revolute_11">
+    <command_interface name="velocity">
+      <param name="min">-10.0</param>
+      <param name="max">10.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
   </joint>
 
-  <joint name="Revolute 12">
-    <command_interface name="velocity"/>
-    <state_interface name="position"/><state_interface name="velocity"/>
+
+  <joint name="Revolute_13">
+    <command_interface name="velocity">
+      <param name="min">-10.0</param>
+      <param name="max">10.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
   </joint>
 
-  <joint name="Revolute 13">
-    <command_interface name="velocity"/>
-    <state_interface name="position"/><state_interface name="velocity"/>
+  <joint name="Revolute_14">
+    <command_interface name="velocity">
+      <param name="min">-10.0</param>
+      <param name="max">10.0</param>
+    </command_interface>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
   </joint>
 
-  <joint name="Revolute 14">
-    <command_interface name="velocity"/>
-    <state_interface name="position"/><state_interface name="velocity"/>
-  </joint>
-
-  <joint name="Revolute 15">
-    <command_interface name="velocity"/>
-    <state_interface name="position"/><state_interface name="velocity"/>
-  </joint>
 
 </ros2_control>
+
+<link name="camera_link">
+  <inertial>
+    <mass value="0.1"/>
+    <origin xyz="0 0 0"/>
+    <inertia
+      ixx="0.0001" ixy="0.0" ixz="0.0"
+      iyy="0.0001" iyz="0.0"
+      izz="0.0001"/>
+  </inertial>
+
+  <visual>
+    <geometry>
+      <box size="0.05 0.05 0.05"/>
+    </geometry>
+  </visual>
+
+  <collision>
+    <geometry>
+      <box size="0.05 0.05 0.05"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="camera_joint" type="fixed">
+  <parent link="base_link"/>
+  <child link="camera_link"/>
+  <origin xyz="0.25 0 0.35" rpy="0 0 0"/>
+</joint>
+
 
 <!-- Add before the closing </robot> tag -->
 <link name="lidar_link">

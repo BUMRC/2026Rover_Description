@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/berenakpinar/Downloads/2026Rover_description
+CMAKE_SOURCE_DIR = /home/berenakpinar/ws_moveit2/src/urdf_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/berenakpinar/Downloads/2026Rover_description/build/urdf_description
+CMAKE_BINARY_DIR = /home/berenakpinar/ws_moveit2/src/urdf_description/build/urdf_description
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/berenakpinar/Downloads/2026Rover_description/build/urdf_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/berenakpinar/Downloads/2026Rover_description /home/berenakpinar/Downloads/2026Rover_description /home/berenakpinar/Downloads/2026Rover_description/build/urdf_description /home/berenakpinar/Downloads/2026Rover_description/build/urdf_description /home/berenakpinar/Downloads/2026Rover_description/build/urdf_description/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/berenakpinar/ws_moveit2/src/urdf_description/build/urdf_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/berenakpinar/ws_moveit2/src/urdf_description /home/berenakpinar/ws_moveit2/src/urdf_description /home/berenakpinar/ws_moveit2/src/urdf_description/build/urdf_description /home/berenakpinar/ws_moveit2/src/urdf_description/build/urdf_description /home/berenakpinar/ws_moveit2/src/urdf_description/build/urdf_description/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -1,67 +1,81 @@
-URDF_controller:
-  # Publish all joint states -----------------------------------
-  joint_state_controller:
-    type: joint_state_controller/JointStateController
-    publish_rate: 50
+controller_manager:
+  ros__parameters:
+    update_rate: 50
 
-  # Position Controllers --------------------------------------
-  Revolute 4_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 4
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 5_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 5
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 6_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 6
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 7_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 7
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 8_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 8
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 9_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 9
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 10_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 10
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 11_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 11
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 12_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 12
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 13_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 13
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 14_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 14
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 15_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 15
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 1_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 1
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 17_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 17
-    pid: {p: 100.0, i: 0.01, d: 10.0}
-  Revolute 18_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Revolute 18
-    pid: {p: 100.0, i: 0.01, d: 10.0}
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    Revolute_4_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_4
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_5_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_5
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_6_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_6
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_7_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_7
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_8_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_8
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_9_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_9
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_10_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_10
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_11_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_11
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_12_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_12
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_13_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_13
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_14_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_14
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_15_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_15
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_1_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_1
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_17_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_17
+      pid: {p: 100.0, i: 0.01, d: 10.0}
+
+    Revolute_18_position_controller:
+      type: effort_controllers/JointPositionController
+      joint: Revolute_18
+      pid: {p: 100.0, i: 0.01, d: 10.0}

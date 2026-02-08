@@ -1,0 +1,36 @@
+digraph G {
+"Bogie3_1" -> "Bogie4_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"base_link" -> "Bogie3_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie3_1" -> "Wheel1_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie4_1" -> "Wheel2_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie4_1" -> "Wheel3_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie1_1" -> "Wheel4_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"base_link" -> "Bogie1_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie2_1" -> "Wheel5_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie1_1" -> "Bogie2_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie2_1" -> "Wheel6_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"base_link" -> "Diff1_1"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie3_1" -> "Bar1_1_sph_x"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bar1_1_sph_x" -> "Bar1_1_sph_y"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bar1_1_sph_y" -> "Bar1_1_sph_z"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Diff1_1" -> "Bar1_2_sph_x"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bar1_2_sph_x" -> "Bar1_2_sph_y"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bar1_2_sph_y" -> "Bar1_2_sph_z"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bar2_1" -> "Bar2_1_sph_x"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie1_1" -> "Bar2_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"Bar2_1_sph_x" -> "Bar2_1_sph_y"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bar2_1_sph_y" -> "Bar2_1_sph_z"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bar2_2" -> "Bar2_2_sph_x"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Diff1_1" -> "Bar2_2"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"Bar2_2_sph_x" -> "Bar2_2_sph_y"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bar2_2_sph_y" -> "Bar2_2_sph_z"[label=" Broadcaster: default_authority\nAverage rate: 10.2\nBuffer length: 5.0\nMost recent transform: 1769893377.704352\nOldest transform: 1769893372.704364\n"];
+"Bogie3_1" -> "Bar1_1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"Diff1_1" -> "Bar1_2"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "base_footprint"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "camera_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base_link" -> "lidar_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1769893377.7224877"[ shape=plaintext ] ;
+}->"base_link";
+}
